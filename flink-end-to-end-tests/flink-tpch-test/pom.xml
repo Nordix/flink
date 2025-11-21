@@ -28,17 +28,21 @@ under the License.
 	<artifactId>flink-tpch-test</artifactId>
 	<name>Flink : E2E Tests : TPCH</name>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>33.4.0-jre</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>io.airlift.tpch</groupId>
 			<artifactId>tpch</artifactId>
 			<version>0.10</version>
-			<exclusions>
-				<exclusion>
-					<groupId>com.google.guava</groupId>
-					<artifactId>guava</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 	</dependencies>
 
