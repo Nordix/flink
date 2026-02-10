@@ -222,7 +222,7 @@ under the License.
 				<!-- dependency convergence -->
 				<groupId>commons-beanutils</groupId>
 				<artifactId>commons-beanutils</artifactId>
-				<version>1.9.4</version>
+				<version>${commons.beanutils.version}</version>
 				<scope>test</scope>
 			</dependency>
 			<dependency>
